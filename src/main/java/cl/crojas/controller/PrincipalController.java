@@ -7,9 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/")
 public class PrincipalController {
-//comentario 
+
     @GetMapping
     public String index() {
-        return "principal/index";
+        
+        String index = "/index";
+        return index;
     }
+    
 }

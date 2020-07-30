@@ -10,7 +10,7 @@ public class ProductoController {
     
     @GetMapping
     public String prodcutos() {
-        return "principal/productos";
+        return "/productos";
         
         
     }

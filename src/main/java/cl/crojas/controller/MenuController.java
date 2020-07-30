@@ -11,7 +11,7 @@ public class MenuController {
     @GetMapping
     public String crearMenu() {
         
-        return"principal/crearMenu";
+        return"/crearMenu";
         
     }
 
