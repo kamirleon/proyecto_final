@@ -49,7 +49,7 @@
     	<div class="sidebar-wrapper">
             <div class="logo">
                 <a href="http://www.creative-tim.com" class="simple-text">
-                    Creative Tim
+                    Menu Admin
                 </a>
             </div>
 
@@ -57,19 +57,19 @@
                 <li class="active">
                     <a href="dashboard.html">
                         <i class="pe-7s-graph"></i>
-                        <p>Dashboard</p>
+                        <p>Opciones de Desayunos</p>
                     </a>
                 </li>
                 <li>
                     <a href="user.html">
                         <i class="pe-7s-user"></i>
-                        <p>User Profile</p>
+                        <p>Crear Menu</p>
                     </a>
                 </li>
                 <li>
                     <a href="table.html">
                         <i class="pe-7s-note2"></i>
-                        <p>Table List</p>
+                        <p>Mantenedor de Productos</p>
                     </a>
                 </li>
                 <li>
