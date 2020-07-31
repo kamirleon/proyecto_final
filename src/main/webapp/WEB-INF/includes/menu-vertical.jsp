@@ -16,19 +16,19 @@
 
 		<ul class="nav">
 
-			<li class="active"><a href="dashboard.html"> <i
+			<li class="active"><a href="/home"> <i
 					class="pe-7s-smile"></i>
 				<!-- https://themes-pixeden.com/font-demos/7-stroke/ -->
 					<p>Opciones desayunos</p>
 			</a></li>
 
-			<li class="active"><a href="dashboard.html"> <i
+			<li class="active"><a href="/productos"> <i
 					class="pe-7s-box1"></i>
 				<!-- https://themes-pixeden.com/font-demos/7-stroke/ -->
 					<p>Productos</p>
 			</a></li>
 
-			<li class="active"><a href="dashboard.html"> <i
+			<li class="active"><a href="/crearmenu"> <i
 					class="pe-7s-gift"></i>
 				<!-- https://themes-pixeden.com/font-demos/7-stroke/ -->
 					<p>Crear menú</p>

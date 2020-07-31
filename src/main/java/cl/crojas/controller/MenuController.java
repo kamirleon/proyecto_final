@@ -5,14 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/crearMenu")
+@RequestMapping("/crearmenu")
 public class MenuController {
     
     @GetMapping
     public String crearMenu() {
         
-        return"/crearMenu";
-        
+        return"menues/crear";
     }
 
 }
