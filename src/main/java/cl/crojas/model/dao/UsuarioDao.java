@@ -6,5 +6,6 @@ import cl.crojas.model.entity.Usuario;
 
 
 public interface UsuarioDao extends JpaRepository<Usuario, Integer>{
-
+    
+    Usuario findByCorreo(String correo);
 }
