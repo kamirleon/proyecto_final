@@ -18,6 +18,11 @@
 <!--     Bootstrap core CSS     -->
 <link href="<c:url value='../assets/css/bootstrap.min.css' />"
 	rel="stylesheet" />
+	
+	<!-- css - data table -->
+<link rel="stylesheet" type="text/css"
+	href="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.css" />
+<!-- css - data table # -->
 
 <!--     Animation library for notifications   -->
 <link href="<c:url value='../assets/css/animate.min.css' />"

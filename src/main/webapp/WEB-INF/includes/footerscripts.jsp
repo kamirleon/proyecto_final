@@ -20,6 +20,16 @@
 <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
 <script src="<c:url value='../assets/js/demo.js' />"></script> 
 
+	<!-- javascript - data table -->
+	<script type="text/javascript"
+		src="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#tablaAutos').DataTable();
+		});
+	</script>
+	<!-- javascript - # data table -->
+
 <script type="text/javascript">
 	$(document).ready(function() {
 		demo.initChartist();
@@ -35,4 +45,5 @@
 		});
 
 	});
-</script>
+	</script>
+

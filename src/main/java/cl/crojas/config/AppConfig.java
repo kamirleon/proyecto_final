@@ -12,7 +12,7 @@ import org.springframework.core.env.Environment;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 @Configuration
-@ComponentScan("cl.lherrera")
+@ComponentScan("cl.crojas")
 @PropertySource("classpath:database.properties")
 public class AppConfig {
 
