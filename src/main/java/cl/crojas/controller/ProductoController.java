@@ -18,12 +18,9 @@ import cl.crojas.services.ProductoService;
 @RequestMapping("/productos")
 public class ProductoController {
 
-     @Autowired
+    @Autowired
     ProductoService servicio;  
 
-
-  
-   
     @GetMapping
     public String productos(@ModelAttribute("mensaje") String mensaje,
         ModelMap mapa) {
@@ -33,12 +30,13 @@ public class ProductoController {
         mapa.put("productos", servicio.obtenerTodos());
 
         return "/productos/index";
-
     }
 
     @PostMapping("/actualizar")
-    public String actualizar(ModelMap mapa, RedirectAttributes atributos,
-        @ModelAttribute Producto producto,
+    public String actualizar(
+        ModelMap mapa, // para pasar datos a la vista
+        RedirectAttributes atributos, // para "enviar mensajes" de una acción que se realiza acá.
+        @ModelAttribute Producto producto, // para almacenar, la información que viene del formulario, (donde el formulario debe tener el atributo de sus inputs, name="va el nombre de cada atributo de la entidad" )
         @RequestParam(name = "imagen", required = false) MultipartFile archivo) {
         if (archivo.isEmpty())
             servicio.actualizar(producto);
@@ -48,12 +46,13 @@ public class ProductoController {
 
         atributos.addFlashAttribute("mensaje", "Producto actualizado");
 
-        return "redirect:/prodcutos";
+        return "redirect:/productos";
 
     }
 
     @PostMapping
-    public String ingresar(RedirectAttributes atributos,
+    public String ingresar(
+        RedirectAttributes atributos,
         @ModelAttribute Producto producto,
         @RequestParam("imagen") MultipartFile archivo) {
         Producto Productorespuesta = servicio.ingresar(producto, archivo);
@@ -66,14 +65,15 @@ public class ProductoController {
     }
 
     @GetMapping(value = "/eliminar")
-    public String eliminar(@RequestParam Integer id,
+    public String eliminar(
+        @RequestParam Integer id,
         RedirectAttributes atributos) {
         Producto producto = servicio.buscar(id);
         servicio.eliminar(producto);
         String mensaje = "Producto: " + producto.getNombre() + " eliminado";
         atributos.addFlashAttribute("mensaje", mensaje);
 
-        return "redirect:/prodcutos";
+        return "redirect:/productos";
 
     }
 

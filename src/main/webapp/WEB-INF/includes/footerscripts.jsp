@@ -28,22 +28,27 @@
 			$('#tablaAutos').DataTable();
 		});
 	</script>
-	<!-- javascript - # data table -->
-
+	<!-- javascript - # data table -->	
 <script type="text/javascript">
 	$(document).ready(function() {
 		demo.initChartist();
+		
+
+
+	});
+
+	const notifica = (mensaje) => {
 		$.notify(
 		{
 			icon : 'pe-7s-gift',
-			message : "Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for every web developer."
-
+			message : mensaje,
 		}, 
 		{
 			type : 'info',
 			timer : 4000
 		});
+	}
 
-	});
 	</script>
+
 
