@@ -19,153 +19,138 @@
 
 			<div class="content">
 				<div class="container-fluid">
+					<h3>Selecionar productos para nuevo Desayuno:</h3>
+					<br>
+
 					<div class="row">
 						<!-- :::::::::::::::::::::::::::::: -->
 						<!-- ::::CONTENIDO - INICIO:::::::: -->
 						<!-- :::::::::::::::::::::::::::::: -->
-						<!-- 					<h1>Ni idea como sería :(</h1> -->
+
+						<div class="col-md-2">
+							<div class="card">
+								<img height="100" class="card-img-top"
+									src="https://www.flaticon.es/premium-icon/icons/svg/1232/1232833.svg"
+									alt="Card image" style="width: 100%">
+								<div class="card-body">
+									<h5 class="card-title">Dulces</h5>
+									<label><input type="checkbox" name="cb-autos"></label><br>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-2">
+							<div class="card">
+								<img height="100" class="card-img-top"
+									src="https://www.flaticon.es/premium-icon/icons/svg/1025/1025585.svg"
+									alt="Card image" style="width: 100%">
+								<div class="card-body">
+									<h5 class="card-title">Dulces</h5>
+									<label><input type="checkbox" name="cb-autos"></label><br>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="card">
+								<img height="100" class="card-img-top"
+									src="https://www.flaticon.es/premium-icon/icons/svg/1232/1232833.svg"
+									alt="Card image" style="width: 100%">
+								<div class="card-body">
+									<h5 class="card-title">Dulces</h5>
+									<label><input type="checkbox" name="cb-autos"></label><br>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="card">
+								<img height="100" class="card-img-top"
+									src="https://www.flaticon.es/premium-icon/icons/svg/1232/1232833.svg"
+									alt="Card image" style="width: 100%">
+								<div class="card-body">
+									<h5 class="card-title">Dulces</h5>
+									<label><input type="checkbox" name="cb-autos"></label><br>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="card">
+								<img height="100" class="card-img-top"
+									src="https://www.flaticon.es/premium-icon/icons/svg/1232/1232833.svg"
+									alt="Card image" style="width: 100%">
+								<div class="card-body">
+									<h5 class="card-title">Dulces</h5>
+									<label><input type="checkbox" name="cb-autos"></label><br>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="card">
+								<img height="100" class="card-img-top"
+									src="https://www.flaticon.es/premium-icon/icons/svg/1232/1232833.svg"
+									alt="Card image" style="width: 100%">
+								<div class="card-body">
+									<h5 class="card-title">Dulces</h5>
+									<label><input type="checkbox" name="cb-autos"></label><br>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="card">
+								<img height="100" class="card-img-top"
+									src="https://www.flaticon.es/premium-icon/icons/svg/1232/1232833.svg"
+									alt="Card image" style="width: 100%">
+								<div class="card-body">
+									<h5 class="card-title">Dulces</h5>
+									<label><input type="checkbox" name="cb-autos"></label><br>
+								</div>
+
+							</div>
+							<p>
+								<input type="submit" value="Confirmar Productos">
+							</p>
+
+						</div>
+
 						<!-- :::::::::::::::::::::::::::::: -->
 						<!-- ::::CONTENIDO - FIN   :::::::: -->
 						<!-- :::::::::::::::::::::::::::::: -->
-
-						<!-- :::::::::::::::TABLA::::::::::::::: -->
-						<div class="col-md-12">
-							<div class="col-md-12">
-								<div class="card strpied-tabled-with-hover">
-									<div class="card-header ">
-										<h4 class="card-title">Productos disponibles para crear
-											Desayuno</h4>
-										<p class="card-category">Selecione el producto y la
-											cantidad que desea agregar al nuevo Desayuno</p>
-									</div>
-									<div class="card-body table-full-width table-responsive">
-										<table class="table table-hover table-striped">
-											<thead>
-												<th>Producto</th>
-												<th>Cantidad</th>
-												<th>Valor</th>
-												<th>Agregar</th>
-											</thead>
-											<tbody>
-												<tr>
-													<td>1</td>
-													<td>Dakota Rice</td>
-													<td>$36,738</td>
-													<td><button type="button"
-															class="btn btn-outline-success">Agregar</button></td>
-												</tr>
-												<tr>
-													<td>2</td>
-													<td>Minerva Hooper</td>
-													<td>$23,789</td>
-													<td><button type="button"
-															class="btn btn-outline-success">Agregar</button>
-												</tr>
-												<tr>
-													<td>3</td>
-													<td>Sage Rodriguez</td>
-													<td>$56,142</td>
-													<td><button type="button"
-															class="btn btn-outline-success">Agregar</button>
-												</tr>
-												<tr>
-													<td>4</td>
-													<td>Philip Chaney</td>
-													<td>$38,735</td>
-													<td><button type="button"
-															class="btn btn-outline-success">Agregar</button>
-												</tr>
-												<tr>
-													<td>5</td>
-													<td>Doris Greene</td>
-													<td>$63,542</td>
-													<td><button type="button"
-															class="btn btn-outline-success">Agregar</button>
-												</tr>
-												<tr>
-													<td>6</td>
-													<td>Mason Porter</td>
-													<td>$78,615</td>
-													<td><button type="button"
-															class="btn btn-outline-success">Agregar</button>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- :::::::::::::::TABLA#:::::::::::::: -->
-
-					</div>
-
-					<div class="col-md-12">
-						<div class="col-md-12">
-							<div class="card strpied-tabled-with-hover">
-								<div class="card-header ">
-									<h4 class="card-title">Productos seleccionados para nuevo
-										Desayuno</h4>
-									<p class="card-category"></p>
-								</div>
-								<div class="card-body table-full-width table-responsive">
-									<table class="table table-hover table-striped">
-										<thead>
-											<th>Producto</th>
-											<th>cantidad</th>
-											<th>precio</th>
-										</thead>
-										<tbody>
-											<tr>
-												<td>1</td>
-												<td>Dakota Rice</td>
-												<td>$36,738</td>
-
-											</tr>
-											<tr>
-												<td>2</td>
-												<td>Minerva Hooper</td>
-												<td>$23,789</td>
-
-											</tr>
-											<tr>
-												<td>3</td>
-												<td>Sage Rodriguez</td>
-												<td>$56,142</td>
-
-											</tr>
-											<tr>
-												<td>4</td>
-												<td>Philip Chaney</td>
-												<td>$38,735</td>
-
-											</tr>
-											<tr>
-												<td>5</td>
-												<td>Doris Greene</td>
-												<td>$63,542</td>
-
-											</tr>
-											<tr>
-												<td>6</td>
-												<td>Mason Porter</td>
-												<td>$78,615</td>
-
-											</tr>
-										</tbody>
-									</table>
-
-									<!--            fin de la tabla  -->
-								</div>
-
-
-							</div>
-							<button type="button" class="btn btn-primary btn-lg">Confirmar
-								Desayuno</button>
-						</div>
-						
-<!-- 						Falta venta emergente que confirme y de boton de publicar!! -->
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-sm-4">
+
+
+						<h2>Información Desayuno:</h2>
+						<form id="formulario" action="<c:url value=''/>" method="post"
+							enctype="multipart/form-data">
+
+							<div class="form-group">
+								<label for="nombre"> Nombre</label> <input id="nombre"
+									name="nombre" type="text" class="form-control" />
+							</div>
+
+
+
+							<div class="form-group">
+								<label for="precio"> Precio Final</label> <input id="precio"
+									name="precio" type="number" class="form-control"
+									required="required" />
+							</div>
+
+							<div class="form-group">
+								<label for="imagen"> Imágen</label> <input id="imagen"
+									name="imagen" type="file" class="form-control" />
+							</div>
+
+							<button id="boton" type="submit" class="btn btn-primary">Publicar</button>
+
+						</form>
+
+
+
+					</div>
+				</div>
+
 
 
 			</div>

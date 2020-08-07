@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
 
 import cl.crojas.model.entity.Desayuno;
 import cl.crojas.model.dto.DesayunoDto;
-import cl.crojas.model.entity.Desayuno;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

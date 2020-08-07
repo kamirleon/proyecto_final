@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
 
 import cl.crojas.model.entity.Producto;
 import cl.crojas.model.dto.ProductoDto;
-import cl.crojas.model.entity.Producto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
