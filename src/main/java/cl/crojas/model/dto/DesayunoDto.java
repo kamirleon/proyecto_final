@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import cl.crojas.model.entity.Desayuno;
 import cl.crojas.model.dto.DesayunoDto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,8 +15,11 @@ import lombok.ToString;
 @Component
 @Data
 public class DesayunoDto {
+    private Integer id;
+    private String nombre;
+    private Integer precio;
+    private String detalle;
+    private String urlimagen;
+    private List<Integer> productos;
 
-    private Desayuno desayuno;
-    private List<Desayuno>desayunos;
-    
 }

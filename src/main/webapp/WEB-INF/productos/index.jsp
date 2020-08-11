@@ -31,14 +31,15 @@
 					<div class="row">
 									<!-- Formulario -->
 				<div>
-				<h1><c:out value="${mensaje}"></c:out></h1>
 					<h2>Mantenedor de Produtos</h2>
-					<form id="formulario" action="<c:url value='/productos'/>" method="post"
+					<form 
+						id="formulario" 
+						action="<c:url value='/productos'/>" 
+						method="post"
 						enctype="multipart/form-data">
 						
 						<div class="form-group">
-							<label for="nombre">
-								Nombre</label> 
+							<label for="nombre"> Nombre</label> 
 							<input 
 								id="nombre" name="nombre"
 								type="text" class="form-control" />

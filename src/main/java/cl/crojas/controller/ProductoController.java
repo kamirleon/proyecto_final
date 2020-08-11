@@ -24,7 +24,6 @@ public class ProductoController {
     @GetMapping
     public String productos(@ModelAttribute("mensaje") String mensaje,
         ModelMap mapa) {
-        System.out.println("mensaje:" + mensaje);
         if (mensaje != null)
             mapa.put("mensaje", mensaje);
         mapa.put("productos", servicio.obtenerTodos());
