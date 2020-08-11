@@ -9,11 +9,11 @@
 </head>
 
 <c:choose >
-	<c:when test="${not empty mensaje}">
-		<body onload="notifica(${mensaje})" > 
+	<c:when test="${empty mensaje}">
+		<body > 
 	</c:when>
 	<c:otherwise>
-		<body onload="notifica(${mensaje})">
+		<body onload="notifica('${mensaje}')" >
 	</c:otherwise>
 </c:choose>
 
@@ -31,26 +31,15 @@
 					<div class="row">
 									<!-- Formulario -->
 				<div>
-
-					<c:if test="${not empty mensaje}">
-						<div class="alert alert-warning alert-dismissible fade show"
-							role="alert">
-							<strong>Información</strong> ${mensaje}
-							<button type="button" class="close" data-dismiss="alert"
-								aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-					</c:if>
-
-
-					<h2>Mantenedor de Produtos **Mensaje: ${mensaje} **</h2>
-					<form id="formulario" action="<c:url value='/productos'/>" method="post"
+					<h2>Mantenedor de Produtos</h2>
+					<form 
+						id="formulario" 
+						action="<c:url value='/productos'/>" 
+						method="post"
 						enctype="multipart/form-data">
 						
 						<div class="form-group">
-							<label for="nombre">
-								Nombre</label> 
+							<label for="nombre"> Nombre</label> 
 							<input 
 								id="nombre" name="nombre"
 								type="text" class="form-control" />
@@ -151,16 +140,6 @@
 		const baseUrl = window.location.origin
 		window.location.href = baseUrl + '/productos/eliminar?id=' + producto.id
 	}
-
-/*
-
-    @Setter @Getter private Integer id;
-    @Setter @Getter private String nombre;
-    @Setter @Getter private String marca;
-    @Setter @Getter private Integer precio;
-    @Setter @Getter private String urlimagen;
-
-*/
 
 	const actualizar = (producto) => {
 		// capturamos el formulario

@@ -1,5 +1,6 @@
 package cl.crojas.services;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -8,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import cl.crojas.model.dao.ProductoDao;
 import cl.crojas.model.entity.Producto;
 import cl.crojas.service.util.UtileriaDeArchivos;
@@ -70,6 +73,29 @@ public class ProductoService {
         
         return dao.save(producto);
         
+    }
+
+    /**
+     * este método parede raro, pero en realidad el json
+     * que muestra los productos en las tarjetas
+     * explota cuando se lo mando con los
+     * desayunos, asi que creo una copia
+     * con ellos en null, es todo :) 
+     */
+    public String productosToJson(List<Producto> productos) {
+        List<Producto> productos_ = new ArrayList<>();
+        productos_.addAll(productos);
+        productos_.forEach(producto -> producto.setDesayuno(null));
+        
+        ObjectMapper mapper = new ObjectMapper();
+        String jsonString = null;
+        try {
+            jsonString = mapper.writeValueAsString(productos_);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+
+        return jsonString;
     }
 
 }
